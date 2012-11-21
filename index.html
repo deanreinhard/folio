@@ -41,7 +41,16 @@ body{padding:0 !important;background:#000;}
  display: block;
  opacity:0.6;
 }
-.color img:hover{opacity:1;}
+.color img:hover{opacity:0.8;}
+.color:hover:after{box-shadow: inset 0 0 30px #09C,0 0 10px rgba(0,0,0,0.2);
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 2;
+ content: "";
+ pointer-events:none;}
 .color:after {
 box-shadow: inset 0 0 10em rgba(0,0,0,0.5),0 0 10px rgba(0,0,0,0.2); 
  position: absolute;
@@ -59,15 +68,15 @@ box-shadow: inset 0 0 10em rgba(0,0,0,0.5),0 0 10px rgba(0,0,0,0.2);
 
     
 	<div class="row-fluid">
-		<div class="color"><a rel="tooltip" title="World Vision Australia Blog" data-placement="bottom" href="http://blog.worldvision.com.au" ><img src="assets/img/blog.png" /></a></div>
-		<div class="color"><a rel="tooltip" title="Bonds Baby Search 2012" data-placement="bottom" href="http://babysearch.bonds.com.au"><img src="assets/img/baby.png" /></a></div>
-		<div class="color"><a rel="tooltip" title="Nestle Happily Healthy" data-placement="bottom" href="http://happily-healthy.com.au"><img src="assets/img/happily.png" /></a></div>
-		<div class="color"><a rel="tooltip" title="Nestle Perfect Italiano Cheese" data-placement="top" href="http://perfectitaliano.com.au"><img src="assets/img/italiano.png" /></a></div>
-		<div class="color"><a rel="tooltip" title="Petaluma Wines" data-placement="top" href="http://www.petaluma.com.au/"><img src="assets/img/petaluma.png" /></a></div>
-		<div class="color"><a rel="tooltip" title="World Vision Australia web redesign" data-placement="top" href="http://worldvision.conductive-entertainment.com"><img src="assets/img/wva.png" /></a></div>
-		<div class="color"><a rel="tooltip" title="XXXX beer island competition" data-placement="top" href="http://xxxxisland.com.au"><img src="assets/img/xxxx.png" /></a></div>
-		<div class="color"><a rel="tooltip" title="Westfield Australia blog" data-placement="top" href="http://blog.westfield.com.au"><img src="assets/img/westfield.png" /></a></div>
-		<div class="color"><a rel="tooltip" title="Hahn beer academy" data-placement="top" href="http://hahn.com.au"><img src="assets/img/hahn.png" /></a></div>
+		<div rel="tooltip" title="World Vision Australia Blog" data-placement="bottom" class="color"><a href="http://blog.worldvision.com.au" ><img src="assets/img/blog.png" /></a></div>
+		<div rel="tooltip" title="Bonds Baby Search 2012" data-placement="bottom" class="color"><a href="http://babysearch.bonds.com.au"><img src="assets/img/baby.png" /></a></div>
+		<div rel="tooltip" title="Nestle Happily Healthy" data-placement="bottom" class="color"><a href="http://happily-healthy.com.au"><img src="assets/img/happily.png" /></a></div>
+		<div rel="tooltip" title="Nestle Perfect Italiano Cheese" data-placement="top" class="color"><a href="http://perfectitaliano.com.au"><img src="assets/img/italiano.png" /></a></div>
+		<div rel="tooltip" title="Petaluma Wines" data-placement="top" class="color"><a href="http://www.petaluma.com.au/"><img src="assets/img/petaluma.png" /></a></div>
+		<div rel="tooltip" title="World Vision Australia web redesign" data-placement="top" class="color"><a href="http://worldvision.conductive-entertainment.com"><img src="assets/img/wva.png" /></a></div>
+		<div rel="tooltip" title="XXXX beer island competition" data-placement="top" class="color"><a href="http://xxxxisland.com.au"><img src="assets/img/xxxx.png" /></a></div>
+		<div rel="tooltip" title="Westfield Australia blog" data-placement="top" class="color"><a href="http://blog.westfield.com.au"><img src="assets/img/westfield.png" /></a></div>
+		<div rel="tooltip" title="Hahn beer academy" data-placement="top" class="color"><a href="http://hahn.com.au"><img src="assets/img/hahn.png" /></a></div>
     </div>
 
     <!-- Footer
