@@ -68,17 +68,25 @@ box-shadow: inset 0 0 10em rgba(0,0,0,0.5),0 0 10px rgba(0,0,0,0.2);
 
     
 	<div class="row-fluid">
-		<div rel="tooltip" title="World Vision Australia Blog" data-placement="bottom" class="color"><a href="http://blog.worldvision.com.au" ><img src="assets/img/blog.png" /></a></div>
-		<div rel="tooltip" title="Bonds Baby Search 2012" data-placement="bottom" class="color"><a href="http://babysearch.bonds.com.au"><img src="assets/img/baby.png" /></a></div>
-		<div rel="tooltip" title="Nestle Happily Healthy" data-placement="bottom" class="color"><a href="http://happily-healthy.com.au"><img src="assets/img/happily.png" /></a></div>
-		<div rel="tooltip" title="Nestle Perfect Italiano Cheese" data-placement="top" class="color"><a href="http://perfectitaliano.com.au"><img src="assets/img/italiano.png" /></a></div>
-		<div rel="tooltip" title="Petaluma Wines" data-placement="top" class="color"><a href="http://www.petaluma.com.au/"><img src="assets/img/petaluma.png" /></a></div>
-		<div rel="tooltip" title="World Vision Australia web redesign" data-placement="top" class="color"><a href="http://worldvision.conductive-entertainment.com"><img src="assets/img/wva.png" /></a></div>
-		<div rel="tooltip" title="XXXX beer island competition" data-placement="top" class="color"><a href="http://xxxxisland.com.au"><img src="assets/img/xxxx.png" /></a></div>
-		<div rel="tooltip" title="Westfield Australia blog" data-placement="top" class="color"><a href="http://blog.westfield.com.au"><img src="assets/img/westfield.png" /></a></div>
-		<div rel="tooltip" title="Hahn beer academy" data-placement="top" class="color"><a href="http://hahn.com.au"><img src="assets/img/hahn.png" /></a></div>
+		<div rel="tooltip" title="World Vision Australia Blog" data-placement="bottom" class="color"><a data-toggle="modal" href="#myModal"  href="http://blog.worldvision.com.au" ><img src="assets/img/blog.png" /></a></div>
+		<div rel="tooltip" title="Bonds Baby Search 2012" data-placement="bottom" class="color"><a target="_blank" href="http://babysearch.bonds.com.au"><img src="assets/img/baby.png" /></a></div>
+		<div rel="tooltip" title="Nestle Happily Healthy" data-placement="bottom" class="color"><a target="_blank" href="http://happily-healthy.com.au"><img src="assets/img/happily.png" /></a></div>
+		<div rel="tooltip" title="Nestle Perfect Italiano Cheese" data-placement="top" class="color"><a target="_blank" href="http://perfectitaliano.com.au"><img src="assets/img/italiano.png" /></a></div>
+		<div rel="tooltip" title="Petaluma Wines" data-placement="top" class="color"><a target="_blank" href="http://www.petaluma.com.au/"><img src="assets/img/petaluma.png" /></a></div>
+		<div rel="tooltip" title="World Vision Australia web redesign" data-placement="top" class="color"><a target="_blank" href="http://worldvision.conductive-entertainment.com"><img src="assets/img/wva.png" /></a></div>
+		<div rel="tooltip" title="XXXX beer island competition" data-placement="top" class="color"><a target="_blank" href="http://xxxxisland.com.au"><img src="assets/img/xxxx.png" /></a></div>
+		<div rel="tooltip" title="Westfield Australia blog" data-placement="top" class="color"><a target="_blank" href="http://blog.westfield.com.au"><img src="assets/img/westfield.png" /></a></div>
+		<div rel="tooltip" title="Hahn beer academy" data-placement="top" class="color"><a target="_blank" href="http://hahn.com.au"><img src="assets/img/hahn.png" /></a></div>
     </div>
-
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3 id="myModalLabel">World Vision Australia Blog</h3>
+            </div>
+            <div class="modal-body">
+              <iframe src="http://blog.worldvision.com.au" width="100%"; height="750px"></iframe>
+            </div>
+          </div>
     <!-- Footer
     ================================================== -->
     

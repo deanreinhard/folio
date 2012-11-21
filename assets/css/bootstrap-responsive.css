@@ -63,7 +63,7 @@
 
 @media (min-width: 768px) and (max-width: 979px) {
 .color{min-width:50%;}
-.row-fluid [class*="color"]:first-child {
+.row-fluid a:first-child {
     margin-left: 0;
 }
   .hidden-desktop {

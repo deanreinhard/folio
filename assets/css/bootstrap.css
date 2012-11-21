@@ -4994,7 +4994,7 @@ input[type="submit"].btn.btn-mini {
   z-index: 1030;
   display: block;
   padding: 5px;
-  font-size: 11px;
+  font-size: 24px;
   opacity: 0;
   filter: alpha(opacity=0);
   visibility: visible;
@@ -5022,12 +5022,14 @@ input[type="submit"].btn.btn-mini {
 }
 
 .tooltip-inner {
-  max-width: 200px;
-  padding: 3px 8px;
+  max-width: 320px;
+  padding: 10px 15px;
   color: #ffffff;
+  text-shadow:1px 1px 3px #09C;
   text-align: center;
   text-decoration: none;
   background-color: #000000;
+  box-shadow:0px 0px 18px #09C;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
