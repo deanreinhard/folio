@@ -10,7 +10,6 @@
     <!-- Styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -34,26 +33,30 @@
 	<!-- END Navbar================================= -->
 <style>
 body{padding:0 !important;background:#000;}
+*{
+ -webkit-transition: 1.2s;
+ -mox-transition: 1.2s;
+ transition: 1.2s;
+}
 .color {
   position: relative;width:33.33%;float:left;
 }
 .color img {
  display: block;
- opacity:0.6;
  width:100%;
+ opacity:0.4;
+ -webkit-filter: grayscale(0.95) brightness(-70%) contrast(80%) ;
 }
-.color img:hover{opacity:0.8;}
-.color:hover:after{box-shadow: inset 0 0 30px #09C,0 0 10px rgba(0,0,0,0.2);
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- z-index: 2;
- content: "";
- pointer-events:none;}
-.color:after {
-box-shadow: inset 0 0 10em rgba(0,0,0,0.5),0 0 10px rgba(0,0,0,0.2); 
+.color img:hover{
+-webkit-filter: grayscale(0) brightness(0%) contrast(100%);
+opacity:1;
+
+box-shadow:0 0 50px #09C;
+border-radius:3px;
+}
+.color:after{}
+.color:hover:after{
+box-shadow: inset 0 0 50px #09C;
  position: absolute;
  top: 0;
  left: 0;
@@ -62,7 +65,9 @@ box-shadow: inset 0 0 10em rgba(0,0,0,0.5),0 0 10px rgba(0,0,0,0.2);
  z-index: 2;
  content: "";
  pointer-events:none;
-}
+ border-radius:3px;
+ }
+
 .modal {
     background-clip: padding-box !important;
     background-color: #FFFFFF !important;
@@ -98,9 +103,7 @@ box-shadow: inset 0 0 10em rgba(0,0,0,0.5),0 0 10px rgba(0,0,0,0.2);
     background: rgba(28,190,230,0.8); 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
-::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(255,0,0,0.4); 
-}
+
 </style>	
 
 
@@ -110,10 +113,10 @@ box-shadow: inset 0 0 10em rgba(0,0,0,0.5),0 0 10px rgba(0,0,0,0.2);
 		<div rel="tooltip" title="World Vision Australia Blog" data-placement="bottom" class="color"><a data-toggle="modal" href="#blog"  href="http://blog.worldvision.com.au" ><img src="assets/img/blog.png" /></a></div>
 		<div rel="tooltip" title="Bonds Baby Search 2012" data-placement="bottom" class="color"><a data-toggle="modal" href="#baby"  href="http://babysearch.bonds.com.au"><img src="assets/img/baby.png" /></a></div>
 		<div rel="tooltip" title="Nestle Happily Healthy" data-placement="bottom" class="color"><a data-toggle="modal" href="#happily"  href="http://happily-healthy.com.au"><img src="assets/img/happily.png" /></a></div>
-		<div rel="tooltip" title="Nestle Perfect Italiano Cheese" data-placement="top" class="color"><a data-toggle="modal" href="#italiano"  href="http://perfectitaliano.com.au"><img src="assets/img/italiano.png" /></a></div>
+		<div rel="tooltip" title="Nestle Perfect Italiano" data-placement="top" class="color"><a data-toggle="modal" href="#italiano"  href="http://perfectitaliano.com.au"><img src="assets/img/italiano.png" /></a></div>
 		<div rel="tooltip" title="Petaluma Wines" data-placement="top" class="color"><a data-toggle="modal" href="#petaluma"  href="http://www.petaluma.com.au"><img src="assets/img/petaluma.png" /></a></div>
-		<div rel="tooltip" title="World Vision Australia web redesign" data-placement="top" class="color"><a data-toggle="modal" href="#wva" href="http://worldvision.conductive-entertainment.com"><img src="assets/img/wva.png" /></a></div>
-		<div rel="tooltip" title="XXXX beer island competition" data-placement="top" class="color"><a data-toggle="modal" href="#xxxx" href="http://xxxxisland.com.au"><img src="assets/img/xxxx.png" /></a></div>
+		<div rel="tooltip" title="World Vision Australia" data-placement="top" class="color"><a data-toggle="modal" href="#wva" href="http://worldvision.conductive-entertainment.com"><img src="assets/img/wva.png" /></a></div>
+		<div rel="tooltip" title="XXXX Island competition" data-placement="top" class="color"><a data-toggle="modal" href="#xxxx" href="http://xxxxisland.com.au"><img src="assets/img/xxxx.png" /></a></div>
 		<div rel="tooltip" title="Westfield Australia blog" data-placement="top" class="color"><a data-toggle="modal" href="#westfield"   href="http://blog.westfield.com.au"><img src="assets/img/westfield.png" /></a></div>
 		<div rel="tooltip" title="Hahn beer academy" data-placement="top" class="color"><a data-toggle="modal" href="#hahn"  href="http://hahn.com.au"><img src="assets/img/hahn.png" /></a></div>
     </div>
